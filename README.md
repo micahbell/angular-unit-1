@@ -28,3 +28,10 @@ Only one AngularJS application can be auto-bootstrapped per HTML document. The f
 **What does ng stand for?**
 
 ng stands for Angular.
+
+--------------------------------------
+**What does ng-model do?**
+**What is "dirty checking"?**
+**Find a way to set the initial value of "name" as "BoJack" (without writing a controller).**
+**What are those {{ }} expressions? Are they Handlebars?**
+**Explain what 2-way data binding is.**

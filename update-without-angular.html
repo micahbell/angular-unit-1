@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Update Without Angular</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('[name=write_name]').addEventListener('input', function(e) {
+          console.log(e.target.value);
+          document.querySelector('h1').innerHTML = e.target.value;
+        })
+      })
+      // document.getElementById('write-name').addEventListener('keyup', function() {
+      //   document.querySelector('h1').innerHTML = this.val;
+      // });
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="What is your name" name='write_name' id='write-name' ng-model='name'>
+     <h1 id='print-name'></h1>
+  </body>
+</html>
