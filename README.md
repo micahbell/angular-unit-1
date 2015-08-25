@@ -102,6 +102,13 @@ The scope is an object that "binds" to the DOM element where you apply controlle
 
 I think they are most similar to classes in OOP..?
 
+---------------------------------
+**Why use ng-src and ng-href?**
+**What are directives?**
+**Does ng-class require an object to be passed in?**
+**What order does an ng-repeat display items in?**
+**How does ng-repeat handle duplicate data?**
+
 
 
 

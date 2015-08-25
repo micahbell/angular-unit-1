@@ -8,101 +8,121 @@
     <script type='text/javascript' src='app.js'></script>
   </head>
   <body>
-      <input type="text" placeholder="What is your name" id='name' ng-model='name'>
-       <h1 id='print-name'>My name is: {{name}}</h1>
-       <hr><hr><br>
+    <input type="text" placeholder="What is your name" id='name' ng-model='name'>
+     <h1 id='print-name'>My name is: {{name}}</h1>
+     <hr><hr><br>
 
-       <label for='cats-or-dogs'>Cats or Dogs? </label>
-       <select id='cats-or-dogs' ng-model='catdog'>
-         <option>dogs</option>
-         <option>cats</option>
-         <option>dogs and cats</option>
-         <option>neither</option>
-       </select>
-       <br>
-       <h3>I love {{catdog}}!</h3>
-       <hr><hr>
+     <label for='cats-or-dogs'>Cats or Dogs? </label>
+     <select id='cats-or-dogs' ng-model='catdog'>
+       <option>dogs</option>
+       <option>cats</option>
+       <option>dogs and cats</option>
+       <option>neither</option>
+     </select>
+     <br>
+     <h3>I love {{catdog}}!</h3>
+     <hr><hr>
 
-       <p>1 + 2 = {{1 + 2}}</p>
-       <p>My name is {{"BoJack" + " Horseman"}}</p>
-       <p>The array [99,43,22] is {{ [99,43,22].length }} items long.</p>
-       <p>{{3.14159265359 | currency : "€"}}</p>
-       <hr><hr>
+     <p>1 + 2 = {{1 + 2}}</p>
+     <p>My name is {{"BoJack" + " Horseman"}}</p>
+     <p>The array [99,43,22] is {{ [99,43,22].length }} items long.</p>
+     <p>{{3.14159265359 | currency : "€"}}</p>
+     <hr><hr>
 
-      <label for='talk'>Please Say Something</label><br>
-      <input type='text' id='talk' ng-model='talk'>
-      <p>
-        Yelling: {{talk | uppercase}}
-      </p>
-      <p>
-        Whispering: {{talk | lowercase}}
-      </p>
-      <hr><hr>
+    <label for='talk'>Please Say Something</label><br>
+    <input type='text' id='talk' ng-model='talk'>
+    <p>
+      Yelling: {{talk | uppercase}}
+    </p>
+    <p>
+      Whispering: {{talk | lowercase}}
+    </p>
+    <hr><hr>
 
-      <p>
-        {{3.14159265359 | number:3}}
-      </p>
-      <p>
-        {{3.14159265359 | number:6}}
-      </p>
-      <p>
-        {{3.14159265359 | number:1}}
-      </p>
-      <hr><hr>
+    <p>
+      {{3.14159265359 | number:3}}
+    </p>
+    <p>
+      {{3.14159265359 | number:6}}
+    </p>
+    <p>
+      {{3.14159265359 | number:1}}
+    </p>
+    <hr><hr>
 
-      <p>
-        How many digits of pi do you want?
-      </p>
-      <select ng-model='digitCount'>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-      </select>
+    <p>
+      How many digits of pi do you want?
+    </p>
+    <select ng-model='digitCount'>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select>
 
-      <ng-pluralize count="digitCount" offset=2
-        when="{ '1': 'Here you go! The first digit of pi!',
-                '2': 'Here you go! The first {{digitCount}} digits of pi!',
-                '3': 'Here you go! The first {{digitCount}} digits of pi!',
-                '4': 'Here you go! The first {{digitCount}} digits of pi!',
-                '5': 'Here you go! The first {{digitCount}} digits of pi!',
-                '6': 'Here you go! The first {{digitCount}} digits of pi!',
-                '7': 'Here you go! The first {{digitCount}} digits of pi!'}">
-      </ng-pluralize>
-      <hr><hr>
+    <ng-pluralize count="digitCount" offset=2
+      when="{ '1': 'Here you go! The first digit of pi!',
+              '2': 'Here you go! The first {{digitCount}} digits of pi!',
+              '3': 'Here you go! The first {{digitCount}} digits of pi!',
+              '4': 'Here you go! The first {{digitCount}} digits of pi!',
+              '5': 'Here you go! The first {{digitCount}} digits of pi!',
+              '6': 'Here you go! The first {{digitCount}} digits of pi!',
+              '7': 'Here you go! The first {{digitCount}} digits of pi!'}">
+    </ng-pluralize>
+    <hr><hr>
 
-      <h3>Super Useful Tip Calculator</h3>
-      <label for="price">How much did your meal cost?</label>
-      <input type="text" id='price' name="price" ng-model='price'>
-      <br><br>
-      <label for="tip">What percentage do you want to tip?</label>
-      <select name="tip" ng-model='tip'>
-        <option>10</option>
-        <option>15</option>
-        <option>20</option>
-      </select>
+    <h3>Super Useful Tip Calculator</h3>
+    <label for="price">How much did your meal cost?</label>
+    <input type="text" id='price' name="price" ng-model='price'>
+    <br><br>
+    <label for="tip">What percentage do you want to tip?</label>
+    <select name="tip" ng-model='tip'>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+    </select>
 
-      <h4>Subtotal: {{ price | currency }}</h4>
-      <h4>Tip: {{ price*(tip/100) |  currency}}</h4>
-      <hr><hr>
+    <h4>Subtotal: {{ price | currency }}</h4>
+    <h4>Tip: {{ price*(tip/100) |  currency}}</h4>
+    <hr><hr>
 
-      <h3>???</h3>
-      <p>With one single expression, prove that the context angular expressions run is not the window object. What is it instead?</p>
-      <hr><hr>
+    <h3>???</h3>
+    <p>With one single expression, prove that the context angular expressions run is not the window object. What is it instead?</p>
+    <hr><hr>
 
-      <div ng-controller="MyFirstController">
-        <h1>My name is: {{name}}</h1>
-        <input ng-model="name" type="text" placeholder="What is your name">
-      </div>
+    <div ng-controller="MyFirstController">
+      <h1>My name is: {{name}}</h1>
+      <input ng-model="name" type="text" placeholder="What is your name">
+    </div>
 
-      <div ng-controller='ExercisesController'>
-        <p>My favorite color is: {{ favColor }}.</p>
-        <p>Seconds in a century: {{ secondsInACentury() }}</p>
-        <p>The current data is: {{ rightNow | date : format : timezone}}</p>
-      </div>
+    <div ng-controller='ExercisesController'>
+      <p>My favorite color is: {{ favColor }}.</p>
+      <p>Seconds in a century: {{ secondsInACentury() }}</p>
+      <p>The current data is: {{ rightNow | date : format : timezone}}</p>
+    </div>
+    <hr><hr>
+
+    <div ng-controller='Directives'>
+      <ul>
+        <li ng-repeat="name in names">
+          {{name}}
+         </li>
+      </ul>
+
+      <ul>
+        <li ng-repeat='symbol in symbols'>
+          {{symbol}}
+        </li>
+      </ul>
+
+    </div>
+    <hr><hr>
+
+
+
 
 
 

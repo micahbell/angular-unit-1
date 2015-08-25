@@ -11,3 +11,8 @@ app.controller('ExercisesController', function($scope) {
   };
   $scope.rightNow = new Date();
 });
+
+app.controller('Directives', function($scope) {
+  $scope.names = ["Harry", "Ron", "Hermione", "Sirius", "Hedwig", "Tonks"];
+  $scope.symbols = ["\u2660", "\u2663", "\u2665", "\u2666"];
+})
