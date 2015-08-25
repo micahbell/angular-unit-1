@@ -81,3 +81,33 @@ currency, number, lowercase, uppercase, json
 **We'll soon see how to create custom filters. What is a use case for a custom filter?**
 
 You need custom filters to produce a specific type of output. Whether you just want a different type of formatting or completely unique output, you can use custom filters to transform the data in the way that you want.
+--------------------------------------
+**What is $scope?**
+
+Every controller has an associated $scope object.
+
+A controller (constructor) function is responsible for setting model properties and functions. This can be done only through $scope. Whatever function or model you apply in View (html file), that is accessed in controller using scope.
+
+Only methods defined on this $scope object are accessible from the HTML/view.
+
+**What are Angular modules?**
+
+An AngularJS module defines an application. The module is a container for the different parts of an application. The module is a container for the application controllers. Controllers always belong to a module.
+
+**Why do we pass in $scope as an argument to controller functions?**
+
+The scope is an object that "binds" to the DOM element where you apply controller. All child elements can read and modify scope data.
+
+**In Express, what are angular controllers most analogous to?**
+
+I think they are most similar to classes in OOP..?
+
+
+
+
+
+
+
+
+
+//
