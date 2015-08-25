@@ -59,3 +59,25 @@ I think the double curly brackets mean whatever is between them is read only.
 **Explain what 2-way data binding is.**
 
 The data model and view are linked so that when a change is made to one, it is also made to the other.
+
+-----------------------------
+**What are Angular expressions? How do they compare to EJS/ERB tags?**
+
+JavaScript-like code snippets that are usually placed in bindings such as {{ expression }}
+
+EJS tags combine data and a template to produce HTML. Like ERB, JavaScript between <% %> is executed. JavaScript between <%= %> adds HTML to the result.
+
+**What happens when you write invalid code in an expression? What type of error do you get?**
+
+I've seen three different results from errors. It sometimes prints the actual text if the whole expression is completely invalid. If part of the expression is invalid it might just be blank. If it can't access the right data from ng-model you might get a message like NaN.
+
+**What are Angular filters? Name 4 built-in filters, including one that we haven't used yet.**
+
+Filters are used to transform data. They can be added to expressions and directives using a pipe character.
+
+currency, number, lowercase, uppercase, json
+
+
+**We'll soon see how to create custom filters. What is a use case for a custom filter?**
+
+You need custom filters to produce a specific type of output. Whether you just want a different type of formatting or completely unique output, you can use custom filters to transform the data in the way that you want.
