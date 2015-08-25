@@ -31,7 +31,31 @@ ng stands for Angular.
 
 --------------------------------------
 **What does ng-model do?**
+
+The ngModel directive binds an input,select, textarea (or custom form control) to a property on the scope using NgModelController, which is created and exposed by this directive.
+
+ngModel is responsible for:
+
+• Binding the view into the model, which other directives such as input, textarea or select require.
+
+• Providing validation behavior (i.e. required, number, email, url).
+
+• Keeping the state of the control (valid/invalid, dirty/pristine, touched/untouched, validation errors).
+
+• Setting related css classes on the element (ng-valid, ng-invalid, ng-dirty, ng-pristine, ng-touched, ng-untouched) including animations.
+
+• Registering the control with its parent form.
+
 **What is "dirty checking"?**
+
+AngularJS implements dirty checking for two way data binding on $scope variables. Unlike dynamically setting up setters and getters, which is how Ember.js does two way data binding, dirty checking allows Angular to watch for variables that may or may not exist.
+
 **Find a way to set the initial value of "name" as "BoJack" (without writing a controller).**
+
 **What are those {{ }} expressions? Are they Handlebars?**
+
+I think the double curly brackets mean whatever is between them is read only.
+
 **Explain what 2-way data binding is.**
+
+The data model and view are linked so that when a change is made to one, it is also made to the other.
