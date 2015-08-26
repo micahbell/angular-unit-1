@@ -104,12 +104,26 @@ I think they are most similar to classes in OOP..?
 
 ---------------------------------
 **Why use ng-src and ng-href?**
+
+Because then the source and href are evaluated and the correct value is plugged in. Otherwise, it would be trying to load an image called {{camera.image}}.
+
 **What are directives?**
+
+A directive is something that introduces new syntax. Directives are markers on a DOM element which attach a special behavior to it. Directives teach HTML the syntax to create and display certain elements that it would not be able to show otherwise.
+
 **Does ng-class require an object to be passed in?**
+
+No, you can pass in an string, object, or an array.
+
 **What order does an ng-repeat display items in?**
+
+It returns in the order returned by the browser when running 'for key in myObj'. It seems that browsers generally follow the strategy of providing keys in the order in which they were defined, although there are exceptions when keys are deleted and reinstated.
+
 **How does ng-repeat handle duplicate data?**
 
+By default, ngRepeat does not allow duplicate items in arrays. This is because when there are duplicates, it is not possible to maintain a one-to-one mapping between collection items and DOM elements.
 
+If you do need to repeat duplicate items, you can substitute the default tracking behavior with your own using the track by expression.
 
 
 
