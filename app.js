@@ -43,5 +43,23 @@ app.controller('CameraSale', function($scope) {
       onSale: true
     }
   ]
+});
 
-})
+app.controller('Click', function($scope) {
+  $scope.number = 5;
+  $scope.pickRandomNumber = function(){
+    $scope.number = Math.floor(Math.random() * 10) + 1
+  };
+  $scope.reverseIt = function(word) {
+    var backwards = '';
+    for (var i = word.length - 1; i >= 0; i--) {
+      backwards += word[i];
+    };
+    $scope.newWord = backwards;
+  };
+});
+
+
+
+
+//

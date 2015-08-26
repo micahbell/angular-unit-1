@@ -1,0 +1,47 @@
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.player1, .player2 {
+  float: left;
+  width: 49%;
+  margin-right: 5px;
+  background-color: cornflowerblue;
+  height: 375px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.75em;
+}
+
+div p:first-child {
+  font-size: 14em;
+  color: white;
+  margin: 0;
+}
+
+.reset button{
+  padding: 15px 30px;
+  position: relative;
+  left: 46%;
+  margin-top: 10px;*/
+}
+
+.winner {
+  background-color: lightgreen;
+}
+
+.loser {
+  background-color: #f66;
+}
+
+
+
+
+
+/*//*/

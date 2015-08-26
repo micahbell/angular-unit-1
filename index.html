@@ -182,12 +182,27 @@
           <img ng-src='{{camera.image}}'/>
       </div>
     </div>
+    <hr><hr>
+
+    <div ng-controller='Click'>
+      <h3>The number is: {{number}}</h3>
+      <button ng-click="pickRandomNumber()">Pick Random Number</button>
+      <hr><hr>
+
+      <label for="word"><h3>Word Reverser</h3></label>
+      <input type="text" name="word" id='word' ng-model='word'>
+      <button type="button" name="reverseWord" ng-click='reverseIt(word)'>Reverse It!</button>
+      <p>Your word is: {{newWord}}</p>
+      <hr><hr>
 
 
 
 
+    </div>
 
-<!-- ng-repeat="friend in friends | orderBy:'-age'" -->
+
+
+
 
 
 
