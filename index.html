@@ -166,11 +166,28 @@
     <div ng-class="{highlight: 4 + 4 == 10}">4 + 4 = 10</div>
     <hr><hr>
 
+    <div ng-controller='CameraSale'>
+      <h2>Camera Shop</h2>
+      <select ng-model='sort'>
+        <option value='price'>Price</option>
+        <option value='rating'>Rating</option>
+      </select>
+      <br>
+      <div class='cameras' ng-repeat='camera in cameras | orderBy: sort'>
+        <div>
+          <h4>{{camera.title}}</h4>
+          <p ng-hide='camera.onSale'>Price: {{camera.price | currency}}</p>
+          <p ng-show='camera.onSale' class='sale'>Price: {{camera.price | currency}} ON SALE!!</p>
+          <p>Rating: {{camera.rating}}</p>
+          <img ng-src='{{camera.image}}'/>
+      </div>
+    </div>
 
 
 
 
 
+<!-- ng-repeat="friend in friends | orderBy:'-age'" -->
 
 
 

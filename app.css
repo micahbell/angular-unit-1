@@ -9,3 +9,25 @@
 .valid {
   color: green;
 }
+
+.cameras {
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.cameras h4 {
+  margin-bottom: -8px;
+}
+
+.cameras p:nth-child(4) {
+  margin-top: -8px;
+}
+
+.cameras img {
+  max-width: 100px;
+  margin: -10px 0px 20px;
+}
+
+.sale {
+  color: #fc3;
+}
