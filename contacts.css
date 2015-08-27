@@ -1,0 +1,29 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto 0px;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto 0px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 5px 10px;
+  background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+td {
+  width: 120px;
+  padding: 5px 10px;
+}
