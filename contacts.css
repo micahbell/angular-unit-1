@@ -16,7 +16,16 @@ table {
 th {
   text-align: left;
   padding: 5px 10px;
-  background-color: lightgray;
+  background-color: white;
+}
+
+tr {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+tr:first-child {
+  border-top: none;
 }
 
 tr:nth-child(odd) {
@@ -25,5 +34,28 @@ tr:nth-child(odd) {
 
 td {
   width: 120px;
-  padding: 5px 10px;
+  padding:10px;
 }
+
+.contact input, .search input {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.search input[name="add"] {
+  padding: 10px;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+//

@@ -32,7 +32,7 @@
       </div>
 
       <div class="table">
-        <table>
+        <table ng-mouseover="count = count + 1" ng-init="count=0" ng-model='count'>
           <thead>
             <th>Name</th>
             <th>Email</th>
@@ -46,6 +46,8 @@
             </tr>
           </tbody>
         </table>
+
+        <h1>{{count}}</h1>
       </div>
     </div>
 
